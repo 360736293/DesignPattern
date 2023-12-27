@@ -5,32 +5,39 @@ package org.example._9适配器;
  */
 public class code {
     public static void main(String[] args) {
-        TargetFather target = new Adapter();
-        target.firstAct();
+        Circle circle = new CircleImpl();
+        circle.calculateArea();
+        Square square = new CircleAdapter(circle);
+        square.calculateArea();
     }
 }
 
-interface TargetFather {
-    void firstAct();
+
+interface Circle {
+    public void calculateArea();
 }
 
-interface AdapteeFather {
-    void secondAct();
+interface Square {
+    public void calculateArea();
 }
 
-class Adaptee implements AdapteeFather {
+class CircleImpl implements Circle {
+
     @Override
-    public void secondAct() {
-        System.out.println("secondAct");
+    public void calculateArea() {
+        System.out.println("计算圆的面积");
     }
 }
 
-class Adapter implements TargetFather {
-    private Adaptee adaptee = new Adaptee();
+class CircleAdapter implements Square {
+    private Circle circle;
+
+    public CircleAdapter(Circle circle) {
+        this.circle = circle;
+    }
 
     @Override
-    public void firstAct() {
-        System.out.println("firstAct");
-        adaptee.secondAct();
+    public void calculateArea() {
+        circle.calculateArea();
     }
 }
