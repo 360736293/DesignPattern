@@ -14,7 +14,7 @@ public class code {
         Leader leaderNode3 = new GeneralManager("王五", 15);
         leaderChain.addChain(leaderNode1).addChain(leaderNode2).addChain(leaderNode3);
         LeaveRequest leaveRequest = new LeaveRequest("小明", 6, "回家探亲");
-        leaderChain.handleChain(leaveRequest);
+        leaderChain.handle(leaveRequest);
     }
 }
 
@@ -26,7 +26,7 @@ class LeaderChain {
         return this;
     }
 
-    public void handleChain(LeaveRequest leaveRequest) {
+    public void handle(LeaveRequest leaveRequest) {
         for (Leader leader : chain) {
             if (leaveRequest.getLeaveDays() <= leader.getDayNum()) {
                 System.out.println("领导：" + leader.getName() + "，批假最大天数：" + leader.getDayNum() + "，审批通过");
