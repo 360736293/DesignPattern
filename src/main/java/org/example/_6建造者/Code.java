@@ -75,7 +75,7 @@ interface Builder {
 }
 
 class Worker implements Builder {
-    private Product product;
+    private final Product product;
 
     public Worker() {
         product = new Product();

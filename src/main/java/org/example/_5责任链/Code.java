@@ -19,7 +19,7 @@ public class Code {
 }
 
 class LeaderChain {
-    private List<Leader> chain = new ArrayList<>();
+    private final List<Leader> chain = new ArrayList<>();
 
     public LeaderChain addChain(Leader leader) {
         this.chain.add(leader);
@@ -39,8 +39,8 @@ class LeaderChain {
 }
 
 class Leader {
-    private String name;
-    private Integer dayNum;
+    private final String name;
+    private final Integer dayNum;
 
     public Leader(String name, Integer dayNum) {
         this.name = name;
@@ -75,9 +75,9 @@ class GeneralManager extends Leader {
 }
 
 class LeaveRequest {
-    private String empName;
-    private int leaveDays;
-    private String reason;
+    private final String empName;
+    private final int leaveDays;
+    private final String reason;
 
     public LeaveRequest(String empName, int leaveDays, String reason) {
         this.empName = empName;

@@ -5,10 +5,12 @@ package org.example._2工厂;
  */
 public class Code {
     public static void main(String[] args) {
-        Car car = CarFactory.getCar("五菱");
-        Car car1 = CarFactory.getCar("特斯拉");
-        car.name();
+        Car car1 = CarFactory.getCar("五菱");
         car1.name();
+        Car car2 = CarFactory.getCar("特斯拉");
+        car2.name();
+        Car car3 = CarFactory.getCar("骷髅马");
+        car3.name();
     }
 }
 
@@ -20,7 +22,7 @@ class CarFactory {
             case "特斯拉":
                 return new Tesla();
             default:
-                return null;
+                throw new RuntimeException("unknown car");
         }
     }
 }
