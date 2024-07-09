@@ -6,6 +6,7 @@ package org.example._6建造者;
 public class Code {
     public static void main(String[] args) {
         Worker worker = new Worker();
+        //建造者设计模式强调对象一定是要按照一定顺序来构建的
         worker.buildA("地基").buildB("墙体").buildC("窗户").buildD("屋顶");
         Product product = worker.getProduct();
         System.out.println(product.toString());

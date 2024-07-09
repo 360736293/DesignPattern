@@ -37,9 +37,9 @@ class ClassC {
 class Facade {
 
     //被委托对象
-    private ClassA ca;
-    private ClassB cb;
-    private ClassC cc;
+    private final ClassA ca;
+    private final ClassB cb;
+    private final ClassC cc;
 
     public Facade() {
         this.ca = new ClassA();
