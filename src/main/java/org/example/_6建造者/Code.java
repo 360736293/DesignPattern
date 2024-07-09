@@ -3,7 +3,7 @@ package org.example._6建造者;
 /**
  * 建造者模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         Worker worker = new Worker();
         worker.buildA("地基").buildB("墙体").buildC("窗户").buildD("屋顶");

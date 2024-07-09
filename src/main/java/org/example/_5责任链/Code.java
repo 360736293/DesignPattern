@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 责任链模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         LeaderChain leaderChain = new LeaderChain();
         Leader leaderNode1 = new Director("张三", 5);

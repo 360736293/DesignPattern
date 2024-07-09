@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 观察者模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         Subject subject = new Subject();
         BinaryObserver binaryObserver = new BinaryObserver(subject);

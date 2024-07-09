@@ -3,7 +3,7 @@ package org.example._3代理;
 /**
  * 代理模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         Proxy proxy = new Proxy(new Host());
         proxy.rent();

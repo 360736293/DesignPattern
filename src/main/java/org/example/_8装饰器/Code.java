@@ -3,7 +3,7 @@ package org.example._8装饰器;
 /**
  * 装饰器模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         Drink coffee = new Coffee();
         Drink sugar = new Sugar(coffee);

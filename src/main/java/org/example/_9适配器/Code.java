@@ -3,7 +3,7 @@ package org.example._9适配器;
 /**
  * 适配器模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         Circle circle = new CircleImpl();
         circle.calculateArea();

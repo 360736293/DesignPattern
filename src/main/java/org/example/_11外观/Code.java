@@ -3,7 +3,7 @@ package org.example._11外观;
 /**
  * 外观模式（又叫门面模式）
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         Facade fd = new Facade();
 

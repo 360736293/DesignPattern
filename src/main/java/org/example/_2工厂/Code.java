@@ -3,7 +3,7 @@ package org.example._2工厂;
 /**
  * 工厂模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         Car car = CarFactory.getCar("五菱");
         Car car1 = CarFactory.getCar("特斯拉");

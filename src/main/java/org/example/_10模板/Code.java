@@ -3,7 +3,7 @@ package org.example._10模板;
 /**
  * 模板模式
  */
-public class code {
+public class Code {
     public static void main(String[] args) {
         GameTemplate game = new Cricket();
         game.play();
